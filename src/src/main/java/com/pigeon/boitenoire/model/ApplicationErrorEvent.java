@@ -1,5 +1,7 @@
 package com.pigeon.boitenoire.model;
 
+import com.pigeon.boitenoire.enums.EventType;
+
 public class ApplicationErrorEvent extends BaseEvent {
 
     private String serviceName;

@@ -2,6 +2,8 @@ package com.pigeon.boitenoire.model;
 
 import java.util.Map;
 
+import com.pigeon.boitenoire.enums.EventType;
+
 public class ApiRequestEvent extends BaseEvent {
 
     private String endpoint;

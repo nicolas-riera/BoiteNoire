@@ -2,6 +2,8 @@ package com.pigeon.boitenoire.model;
 
 import java.util.List;
 
+import com.pigeon.boitenoire.enums.EventType;
+
 public class PaymentProcessedEvent extends BaseEvent {
 
     private String transactionId;

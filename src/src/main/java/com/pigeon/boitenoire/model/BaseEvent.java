@@ -3,6 +3,9 @@ package com.pigeon.boitenoire.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import com.pigeon.boitenoire.enums.EventType;
+
 import java.time.Instant;
 
 @Document(collection = "events")

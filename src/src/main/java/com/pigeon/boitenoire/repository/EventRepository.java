@@ -1,7 +1,8 @@
 package com.pigeon.boitenoire.repository;
 
+import com.pigeon.boitenoire.enums.EventType;
 import com.pigeon.boitenoire.model.BaseEvent;
-import com.pigeon.boitenoire.model.EventType;
+
 import org.springframework.data.mongodb.repository.MongoRepository;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.pigeon.boitenoire.model;
+package com.pigeon.boitenoire.enums;
 
 public enum EventType {
     USER_LOGIN,
