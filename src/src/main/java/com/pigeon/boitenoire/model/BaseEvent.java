@@ -1,14 +1,14 @@
 package com.pigeon.boitenoire.model;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.CompoundIndex; // <--- IMPORT À AJOUTER
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
-
 import com.pigeon.boitenoire.enums.EventType;
-
 import java.time.Instant;
 
 @Document(collection = "events")
+@CompoundIndex(name = "class_timestamp_idx", def = "{'_class': 1, 'timestamp': 1}") // <--- ANNOTATION À AJOUTER
 public abstract class BaseEvent {
 
     @Id
